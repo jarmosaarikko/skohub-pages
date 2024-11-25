@@ -27,6 +27,14 @@
       }
     }
   ],
+  "exactMatch": [
+    {
+      "id": "http://www.wikidata.org/entity/Q7390"
+    },
+    {
+      "id": "http://id.loc.gov/authorities/performanceMediums/mp2013015791"
+    }
+  ],
   "inScheme": [
     {
       "id": "https://w3id.org/voice/",
