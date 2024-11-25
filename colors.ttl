@@ -4,17 +4,19 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 colour: a skos:ConceptScheme ;
-    dct:title "Colour Vocabulary"@en, "Farbvokabular"@de ;
+    dct:title "Colour Vocabulary"@en, "Farbvokabular"@de , "Värisanasto"@fi ;
     dct:creator "Hans Dampf"@de ;
     dct:created "2021-11-02"^^xsd:date ;
+    dct:modified "2024-11-25"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept colour:violet, colour:blue .
+    skos:hasTopConcept colour:violet, colour:blue ;
+    dct:language "fi" .
 
 colour:violet a skos:Concept ;
-    skos:prefLabel "Violett"@de, "violet"@en;
+    skos:prefLabel "Violett"@de, "violet"@en, "violetti"@fi;
     skos:altLabel "Lila"@de, "purple"@en ;
     skos:topConceptOf colour: .
 
 colour:blue a skos:Concept ;
-    skos:prefLabel "Blau"@de, "blue"@en ;
+    skos:prefLabel "Blau"@de, "blue"@en, "sininen"@fi ;
     skos:topConceptOf colour: .
