@@ -1,44 +1,60 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
-@prefix voice: <https://w3id.org/>.
+@prefix voice: <https://w3id.org/voice/>.
 
 voice:
     a skos:ConceptScheme;
-    dct:description "Ihmisäänisanasto"@fr, "Voice vocabulary"@en;
-    dct:title "Ihmisäänien käsitteet"@fr, "Voice concepts"@en;
+    dct:description "Ihmisäänisanasto"@fi, "Voice vocabulary"@en;
+    dct:title "Ihmisäänien käsitteet"@fi, "Voice concepts"@en;
     vann:preferredNamespaceUri voice:;
     skos:hasTopConcept voice:v00427 .
 voice:v00427
     a skos:Concept;
     skos:narrower voice:v00583, voice:v00804, voice:v00805;
-    skos:prefLabel "ihmis\u00e4\u00e4ni"@fr, "voice"@en;
+    skos:prefLabel "ihmis\u00e4\u00e4ni"@fi, "voice"@en;
     skos:topConceptOf voice: .
 voice:v00583
     a skos:Concept;
     skos:broader voice:v00427;
     skos:inScheme voice:;
     skos:narrower voice:v00668, voice:v00696;
-    skos:prefLabel "SIngstimme"@de, "laulu\u00e4\u00e4ni"@fr.
+    skos:prefLabel "SIngstimme"@de, "laulu\u00e4\u00e4ni"@fi.
 voice:v00668
     a skos:Concept;
     skos:broader voice:v00583;
     skos:inScheme voice:;
-    skos:prefLabel "mieslaulu\u00e4\u00e4ni"@fr, "m\u00e4nnliche Singstimme"@de.
+    skos:prefLabel "mieslaulu\u00e4\u00e4ni"@fi, "m\u00e4nnliche Singstimme"@de.
 voice:v00696
     a skos:Concept;
     skos:broader voice:v00583;
     skos:inScheme voice:;
-    skos:prefLabel "naislaulu\u00e4\u00e4ni"@fr, "weibliche Singstimme"@de.
+    skos:prefLabel "naislaulu\u00e4\u00e4ni"@fi, "weibliche Singstimme"@de.
 voice:v00804
     a skos:Concept;
-    skos:altlabel "Sprechgesang"@fr;
+    skos:altlabel "Sprechgesang"@fi;
     skos:broader voice:v00427;
     skos:inScheme voice:;
-    skos:prefLabel "puhelaulu"@fr.
+    skos:prefLabel "puhelaulu"@fi.
 voice:v00805
     a skos:Concept;
-    skos:altlabel "lausuja"@fr;
+    skos:altlabel "lausuja"@fi;
     skos:broader voice:v00427;
     skos:inScheme voice:;
-    skos:prefLabel "Stimme der Rede"@de, "puhe\u00e4\u00e4ni"@fr.
+    skos:prefLabel "Stimme der Rede"@de, "puhe\u00e4\u00e4ni"@fi.
+voice:v00102
+    a skos:Concept;
+    skos:altlabel "tenoribaritoni"@fi, "bassobaritoni"@fi;
+    skos:broader voice:v00668;
+    skos:inScheme voice:;
+    skos:prefLabel "Baryton"@de, "baritoni"@fi.
+voice:v01075
+    a skos:Concept;
+    skos:broader voice:v00668;
+    skos:inScheme voice:;
+    skos:prefLabel "Tenor"@de, "tenori"@fi.
+voice:v00114
+    a skos:Concept;
+    skos:broader voice:v00668;
+    skos:inScheme voice:;
+    skos:prefLabel "Bass"@de, "basso"@fi.
