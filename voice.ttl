@@ -13,6 +13,9 @@ voice:v00427
     a skos:Concept;
     skos:narrower voice:v00583, voice:v00804, voice:v00805;
     skos:prefLabel "ihmis\u00e4\u00e4ni"@fi, "voice"@en;
+    skos:exactMatch <http://www.wikidata.org/entity/Q7390>;
+    skos:exactMatch <http://id.loc.gov/authorities/performanceMediums/mp2013015791> ;
+    skos:broader <http://urn.fi/urn:nbn:fi:au:seko:01223> ;
     skos:topConceptOf voice: .
 voice:v00583
     a skos:Concept;
