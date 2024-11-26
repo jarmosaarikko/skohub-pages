@@ -5,10 +5,14 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix mi: <https://w3id.org/polifonia/ontology/instrument/> .
+@prefix polifonia: <https://w3id.org/polifonia/ontology/core/> .
 
-<https://w3id.org/polifonia/ontology/music-instrument/> a owl:Ontology ;
+mi: a owl:Ontology ;
 	owl:versionIRI <https://w3id.org/polifonia/ontology/music-instrument/1.0/> ;
-	owl:imports <https://w3id.org/arco/ontology/location/1.2>, <https://w3id.org/polifonia/ontology/core/1.0>, <https://w3id.org/polifonia/ontology/music-meta/1.0/> ;
+	owl:imports <https://w3id.org/arco/ontology/location/1.2>, 
+                    <https://w3id.org/polifonia/ontology/core/1.0>, 
+                    <https://w3id.org/polifonia/ontology/music-meta/1.0/> ;
 	dc11:creator "Jacopo de Berardinis"@en, "Valentina Carriero"@en, "Valentina Presutti"@en ;
 	dc11:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
 	dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
@@ -21,81 +25,83 @@
 	dcterms:modified "\"2023-05-19\"^^xsd:date" ;
 	dcterms:issued "\"2023-04-12\"^^xsd:date" ;
 	vann:preferredNamespacePrefix "mi:" ;
-	vann:preferredNamespaceUri "https://w3id.org/polifonia/ontology/music-instrument/" .
+	vann:preferredNamespaceUri "music-instrument" ;
+        skos:hasTopConcept mi:Instrument .
 
-<https://w3id.org/polifonia/ontology/instrument/hasBuilder> a owl:ObjectProperty ;
-	rdfs:domain <https://w3id.org/polifonia/ontology/instrument/InstrumentRealization> ;
-	rdfs:range <https://w3id.org/polifonia/ontology/core/Agent> ;
+mi:hasBuilder a owl:ObjectProperty ;
+	rdfs:domain mi:InstrumentRealization ;
+	rdfs:range polifonia:Agent ;
 	rdfs:comment "The relation between an instrument realization and its builder."@en ;
 	rdfs:label "has builder"@en .
 
-<https://w3id.org/polifonia/ontology/instrument/wasBuiltAtTime> a owl:ObjectProperty ;
-	rdfs:domain <https://w3id.org/polifonia/ontology/instrument/InstrumentRealization> ;
-	rdfs:range <https://w3id.org/polifonia/ontology/core/TimeInterval> ;
+mi:wasBuiltAtTime a owl:ObjectProperty ;
+	rdfs:domain mi:InstrumentRealization ;
+	rdfs:range polifonia:TimeInterval ;
 	rdfs:comment "The relation between an instrument realization and the time interval it was built at."@en ;
 	rdfs:label "was built at time"@en .
 
-<https://w3id.org/polifonia/ontology/instrument/wasBuiltIn> a owl:ObjectProperty ;
-	rdfs:domain <https://w3id.org/polifonia/ontology/instrument/InstrumentRealization> ;
-	rdfs:range <https://w3id.org/polifonia/ontology/core/Place> ;
+mi:wasBuiltIn a owl:ObjectProperty ;
+	rdfs:domain mi:InstrumentRealization ;
+	rdfs:range polifonia:Place ;
 	rdfs:comment "The relation between an instrument realization and the place it was built in."@en ;
 	rdfs:label "was built in"@en .
 
-<https://w3id.org/polifonia/ontology/instrument/wasInventedAtTime> a owl:ObjectProperty ;
-	rdfs:domain <https://w3id.org/polifonia/ontology/instrument/Instrument> ;
-	rdfs:range <https://w3id.org/polifonia/ontology/core/TimeInterval> ;
+mi:wasInventedAtTime a owl:ObjectProperty ;
+	rdfs:domain mi:Instrument ;
+	rdfs:range polifonia:TimeInterval ;
 	rdfs:comment "The relation between an instrument, intended as an information object, and the time interval it was invented at."@en ;
 	rdfs:label "was invented at time"@en .
 
-<https://w3id.org/polifonia/ontology/instrument/wasInventedBy> a owl:ObjectProperty ;
-	rdfs:domain <https://w3id.org/polifonia/ontology/instrument/Instrument> ;
-	rdfs:range <https://w3id.org/polifonia/ontology/core/Agent> ;
+mi:wasInventedBy a owl:ObjectProperty ;
+	rdfs:domain mi:Instrument ;
+	rdfs:range polifonia:Agent ;
 	rdfs:comment "The relation between an instrument as an information object and the agent which invented it."@en ;
 	rdfs:label "was invented by"@en .
 
-<https://w3id.org/polifonia/ontology/instrument/Instrument> a owl:Class ;
-	rdfs:subClassOf <https://w3id.org/polifonia/ontology/core/InformationObject>, <https://w3id.org/polifonia/ontology/music-meta/MediumOfPerformance>, [
+mi:Instrument a owl:Class ;
+	rdfs:subClassOf polifonia:InformationObject, 
+                        <https://w3id.org/polifonia/ontology/music-meta/MediumOfPerformance>, [
 		rdf:type owl:Restriction ;
-		owl:onProperty <https://w3id.org/polifonia/ontology/instrument/wasInventedAtTime> ;
-		owl:someValuesFrom <https://w3id.org/polifonia/ontology/core/TimeInterval> ;
+		owl:onProperty mi:wasInventedAtTime ;
+		owl:someValuesFrom polifonia:TimeInterval ;
 	], [
 		rdf:type owl:Restriction ;
-		owl:onProperty <https://w3id.org/polifonia/ontology/instrument/wasInventedBy> ;
-		owl:someValuesFrom <https://w3id.org/polifonia/ontology/core/Agent> ;
+		owl:onProperty mi:wasInventedBy ;
+		owl:someValuesFrom polifonia:Agent ;
 	], [
 		rdf:type owl:Restriction ;
 		owl:onProperty <https://w3id.org/arco/ontology/core/hasPart> ;
-		owl:allValuesFrom <https://w3id.org/polifonia/ontology/instrument/InstrumentPart> ;
+		owl:allValuesFrom mi:InstrumentPart ;
 	] ;
 	rdfs:comment "An instrument intended as an information object (e.g. the guitar as an information object), regardless its physical realizations (e.g. the specific guitar at my place)."@en ;
 	rdfs:label "Instrument"@en .
 
-<https://w3id.org/polifonia/ontology/instrument/InstrumentPart> a owl:Class ;
+mi:InstrumentPart a owl:Class ;
 	rdfs:comment "The part of an instrument."@en ;
 	rdfs:label "Instrument part"@en .
 
-<https://w3id.org/polifonia/ontology/instrument/InstrumentRealization> a owl:Class ;
-	rdfs:subClassOf <https://w3id.org/polifonia/ontology/core/InformationRealization>, [
+mi:InstrumentRealization a owl:Class ;
+	rdfs:subClassOf polifonia:InformationRealization, [
 		rdf:type owl:Restriction ;
 		owl:onProperty <https://w3id.org/arco/ontology/location/hasTimeIndexedTypedLocation> ;
 		owl:someValuesFrom <https://w3id.org/arco/ontology/location/TimeIndexedTypedLocation> ;
 	], [
 		rdf:type owl:Restriction ;
-		owl:onProperty <https://w3id.org/polifonia/ontology/core/hasName> ;
-		owl:someValuesFrom <https://w3id.org/polifonia/ontology/core/Name> ;
+		owl:onProperty polifonia:hasName ;
+		owl:someValuesFrom polifonia:Name ;
 	], [
 		rdf:type owl:Restriction ;
-		owl:onProperty <https://w3id.org/polifonia/ontology/core/realizes> ;
-		owl:someValuesFrom <https://w3id.org/polifonia/ontology/instrument/Instrument> ;
+		owl:onProperty polifonia:realizes ;
+		owl:someValuesFrom mi:Instrument ;
 	], [
 		rdf:type owl:Restriction ;
-		owl:onProperty <https://w3id.org/polifonia/ontology/instrument/wasBuiltIn> ;
-		owl:someValuesFrom <https://w3id.org/polifonia/ontology/core/Place> ;
+		owl:onProperty mi:wasBuiltIn ;
+		owl:someValuesFrom polifonia:Place ;
 	] ;
 	rdfs:comment "The physical realization of an instrument, intended as the information realization (e.g. the specific guitar at my place) and the information object (the guitar as an information object)."@en ;
 	rdfs:label "Instrument realization"@en .
 
-<https://w3id.org/polifonia/ontology/instrument/Voice> a owl:Class ;
+mi:Voice a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/polifonia/ontology/music-meta/MediumOfPerformance> ;
 	rdfs:label "Voice"@en .
 
