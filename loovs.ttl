@@ -24,7 +24,7 @@ loovs: a skos:ConceptScheme ;
         <https://iso639-3.sil.org/code/nob> ,
         <https://iso639-3.sil.org/code/eng> ,
         <https://iso639-3.sil.org/code/swe> ,
-        <https://iso639-3.sil.org/code/fin> ,;
+        <https://iso639-3.sil.org/code/fin> ;
     dc:rights ;
     dc:publisher "Ájtte, Swedish Mountain and Sami museum"@en  ;
     dc:creator "National library of Norway"@en ,
