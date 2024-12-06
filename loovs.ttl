@@ -1,0 +1,1561 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix loovs: <https://w3id.org/loovs/> .
+
+loovs: a skos:ConceptScheme ;
+    vann:preferredNamespaceUri loovs:;
+    skos:hasTopConcept loovs:0 ;
+    dc:title 
+       "Løøv classification"@en ,
+       "Løøva klassifikašuvdna"@se ,
+       "Løøv-klassifikasjon"@nn ,
+       "Løøv-klassifikasjon"@nb ,
+       "Löövin luokitus"@fi ,
+       "Løøv-klassifikation"@sv  ;
+    dc:language 
+        <https://iso639-3.sil.org/code/sme> ,
+        <https://iso639-3.sil.org/code/nno> ,
+        <https://iso639-3.sil.org/code/nob> ,
+        <https://iso639-3.sil.org/code/eng> ,
+        <https://iso639-3.sil.org/code/swe> ,
+        <https://iso639-3.sil.org/code/fin> ,;
+    dc:rights ;
+    dc:publisher "Ájtte, Swedish Mountain and Sami museum"@en  ;
+    dc:creator "National library of Norway"@en ,
+        "Sami Special Library at the Rovaniemi City Library"@en ,
+        "Murmansk State Regional Universal Scientific Library"@en ,
+        "Ájtte, Swedish Mountain- and Sami museum"@en ;
+    dc:identifier 
+        <http://id.loc.gov/vocabulary/classSchemes/loovs> ,
+        <http://www.wikidata.org/entity/Q56686338> ,
+        <https://bartoc.org/en/node/20318>;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    foaf:homepage <https://bibsys-almaprimo.hosted.exlibrisgroup.com/primo-explore/search?vid=SAPMI> 
+    .
+
+loovs:0  a skos:Concept, owl:Class ;
+    skos:notation "0" ; 
+    skos:prefLabel 
+       "Løøv classification"@en ,
+       "Løøva klassifikašuvdna"@se ,
+       "Løøv-klassifikasjon"@nn ,
+       "Løøv-klassifikasjon"@nb ,
+       "Löövin luokitus"@fi ,
+       "Løøv-klassifikation"@sv ;
+    skos:topConceptOf loovs: .
+
+loovs:01  a skos:Concept, owl:Class ;
+    skos:notation "01" ; 
+    skos:prefLabel 
+       "Book and library research"@en ,
+       "GIRJE- JA GIRJERÁJUSDOAIMMAT"@se ,
+       "BOK- OG BIBLIOTEKVESEN"@nn ,
+       "BOK OG BIBLIOTEKVESEN"@nb ,
+       "KIRJA- JA KIRJASTOALA"@fi ,
+       "BOK OCH BIBLIOTEKSVÄSEN"@sv .
+
+loovs:01a  a skos:Concept, owl:Class ;
+    skos:notation "01a" ; 
+    skos:prefLabel 
+       "General bibliographies"@en ,
+       "Oppalaš bibliografiat"@se ,
+       "Generelle bibliografiar"@nn ,
+       "Generelle bibliografier"@nb ,
+       "Yleiset bibliografiat"@fi ,
+       "Generella bibliografier"@sv .
+
+loovs:01b  a skos:Concept, owl:Class ;
+    skos:notation "01b" ; 
+    skos:prefLabel 
+       "Bibliographies of individuals"@en ,
+       "Ovttaskasolbmuid bibliografiat"@se ,
+       "Bibliografiar over enkeltpersonar"@nn ,
+       "Bibliografier over enkeltpersoner"@nb ,
+       "Henkilöbibliografiat"@fi ,
+       "Bibliografier över särskilda personer"@sv .
+
+loovs:01c  a skos:Concept, owl:Class ;
+    skos:notation "01c" ; 
+    skos:prefLabel 
+       "Library catalogues"@en ,
+       "Girjerádjokatalogat"@se ,
+       "Bibliotekkatalogar"@nn ,
+       "Bibliotekkataloger"@nb ,
+       "Kirjastojen luettelot"@fi ,
+       "Bibliotekskataloger"@sv .
+
+loovs:01d  a skos:Concept, owl:Class ;
+    skos:notation "01d" ; 
+    skos:prefLabel 
+       "Books and libraries in general"@en ,
+       "Girjjiid ja girjerádjosiid birra dábáláččat"@se ,
+       "Generelt om bøker og bibliotek"@nn ,
+       "Generelt om bøker og bibliotek"@nb ,
+       "Kirjat ja kirjastot yleensä"@fi ,
+       "Allmänt om böcker och bibliotek"@sv .
+
+loovs:01e  a skos:Concept, owl:Class ;
+    skos:notation "01e" ; 
+    skos:prefLabel 
+       "Book reviews"@en ,
+       "Girjeárvvoštallamat"@se ,
+       "Bokomtalar"@nn ,
+       "Bokomtaler"@nb ,
+       "Kirja-arvostelut"@fi ,
+       "Recensioner"@sv .
+
+loovs:01f  a skos:Concept, owl:Class ;
+    skos:notation "01f" ; 
+    skos:prefLabel 
+       "Archives"@en ,
+       "Arkiivvat"@se ,
+       "Arkiv"@nn ,
+       "Arkiv"@nb ,
+       "Arkistot"@fi ,
+       "Arkiv"@sv .
+
+loovs:02  a skos:Concept, owl:Class ;
+    skos:notation "02" ; 
+    skos:prefLabel 
+       "Comprehensive works and works of miscellaneous contents"@en ,
+       "OPPALAŠGIRJJIT JA IEŠGUĐETLÁGÁN SISDOLOT GIRJJIT"@se ,
+       "OVERSIKTSVERK OG SKRIFTER AV BLANDA INNHALD"@nn ,
+       "OVERSIKTSVERKER OG SKRIFTER AV BLANDET INNHOLD"@nb ,
+       "KOKOOMATEOKSET JA ERI ALOJEN JULKAISUT"@fi ,
+       "ÖVERSIKTSVERK OCH SKRIFTER AV BLANDAT INNEHÅLL"@sv .
+
+loovs:02a  a skos:Concept, owl:Class ;
+    skos:notation "02a" ; 
+    skos:prefLabel 
+       "General surveys and handbooks"@en ,
+       "Oppalaš čilgehusat ja giehtagirjjit"@se ,
+       "Generelle oversyn og handbøker"@nn ,
+       "Generelle oversikter og håndbøker"@nb ,
+       "Yleiskatsaukset ja käsikirjat"@fi ,
+       "Allmänna översiktsverk och handböcker"@sv .
+
+loovs:02b  a skos:Concept, owl:Class ;
+    skos:notation "02b" ; 
+    skos:prefLabel 
+       "Non-specialized periodicals"@en ,
+       "Oppalaš áigečallagat"@se ,
+       "Periodiske publikasjonar som ikkje høyrer under noko enkelt fag"@nn ,
+       "Periodiske publikasjoner som ikke hører under noe enkelt fag"@nb ,
+       "Yleiset sarjajulkaisut"@fi ,
+       "Allmänna periodiska publikationer"@sv .
+
+loovs:02c  a skos:Concept, owl:Class ;
+    skos:notation "02c" ; 
+    skos:prefLabel 
+       "Works of miscellaneous content"@en ,
+       "iešguđetlágán sisdolot girjjit"@se ,
+       "Skrifter av blanda innhald"@nn ,
+       "Skrifter av blandet innhold"@nb ,
+       "Moniaiheiset teokset"@fi ,
+       "Skrifter av blandat innehåll"@sv .
+
+loovs:02d  a skos:Concept, owl:Class ;
+    skos:notation "02d" ; 
+    skos:prefLabel 
+       "Research methodology"@en ,
+       "Dutkanmetodihkka"@se ,
+       "Forskingsmetodikk"@nn ,
+       "Forskningsmetodikk"@nb ,
+       "Tutkimusmenetelmät"@fi ,
+       "Forskningsmetodik"@sv .
+
+loovs:03  a skos:Concept, owl:Class ;
+    skos:notation "03" ; 
+    skos:prefLabel 
+       "Sami institutions and organisations"@en ,
+       "SÁMI ÁSAHUSAT JA ORGANISAŠUVNNAT"@se ,
+       "SAMISKE INSTITUSJONAR OG ORGANISASJONAR"@nn ,
+       "SAMISKE INSTITUSJONER OG ORGANISASJONER"@nb ,
+       "SAAMELAISET LAITOKSET JA ORGANISAATIOT"@fi ,
+       "SAMISKA INSTITUTIONER OCH ORGANISATIONER"@sv .
+
+loovs:03a  a skos:Concept, owl:Class ;
+    skos:notation "03a" ; 
+    skos:prefLabel 
+       "Institutions and agencies"@en ,
+       "Ásahusat"@se ,
+       "Institusjonar og organ"@nn ,
+       "Institusjoner og organer"@nb ,
+       "Laitokset ja virastot"@fi ,
+       "Institutioner och organ"@sv .
+
+loovs:03b  a skos:Concept, owl:Class ;
+    skos:notation "03b" ; 
+    skos:prefLabel 
+       "Organizations and associations"@en ,
+       "Organisašuvnnat ja searvvit"@se ,
+       "Organisasjonar og foreningar"@nn ,
+       "Organisasjoner og foreninger"@nb ,
+       "Järjestöt ja yhdistykset"@fi ,
+       "Organisationer och föreningar"@sv .
+
+loovs:03c  a skos:Concept, owl:Class ;
+    skos:notation "03c" ; 
+    skos:prefLabel 
+       "Conferences and meetings"@en ,
+       "Konfearánssat ja čoahkkimat"@se ,
+       "Konferansar og møte"@nn ,
+       "Konferanser og møter"@nb ,
+       "Konferenssit ja kokoukset"@fi ,
+       "Konferenser och möten"@sv .
+
+loovs:04  a skos:Concept, owl:Class ;
+    skos:notation "04" ; 
+    skos:prefLabel 
+       "Religion, philosophy, psychology"@en ,
+       "OSKKUT, FILOSOFIIJA, PSYKOLOGIIJA"@se ,
+       "RELIGION, FILOSOFI OG PSYKOLOGI"@nn ,
+       "RELIGION, FILOSOFI OG PSYKOLOGI"@nb ,
+       "USKONTO, FILOSOFIA JA PSYKOLOGIA"@fi ,
+       "RELIGION, FILOSOFI OCH PSYKOLOGI"@sv .
+
+loovs:04a  a skos:Concept, owl:Class ;
+    skos:notation "04a" ; 
+    skos:prefLabel 
+       "Pre-Christian religions"@en ,
+       "Ovdakristtalaš osku"@se ,
+       "Førkristen tru"@nn ,
+       "Førkristen tro"@nb ,
+       "Esikristilliset uskonnot"@fi ,
+       "Förkristen tro"@sv .
+
+loovs:04b  a skos:Concept, owl:Class ;
+    skos:notation "04b" ; 
+    skos:prefLabel 
+       "Church and mission history"@en ,
+       "Girko- ja mišuvdnahistorjá"@se ,
+       "Kyrkje- og misjonshistorie"@nn ,
+       "Kirke og misjonshistorie"@nb ,
+       "Kirkko- ja lähetyshistoria"@fi ,
+       "Kyrko- och missionshistoria"@sv .
+
+loovs:04c  a skos:Concept, owl:Class ;
+    skos:notation "04c" ; 
+    skos:prefLabel 
+       "Congregations"@en ,
+       "Ovttaskas girkoservodagat"@se ,
+       "Enkelte kyrkjesamfunn"@nn ,
+       "Enkelte kirkesamfunn"@nb ,
+       "Seurakunnat"@fi ,
+       "Särskilda kyrkoförsamlingar"@sv .
+
+loovs:04d  a skos:Concept, owl:Class ;
+    skos:notation "04d" ; 
+    skos:prefLabel 
+       "Læstadianism"@en ,
+       "Læstadianisma"@se ,
+       "Læstadianisme"@nn ,
+       "Læstadianisme"@nb ,
+       "Lestadiolaisuus"@fi ,
+       "Laestadianism"@sv .
+
+loovs:04e  a skos:Concept, owl:Class ;
+    skos:notation "04e" ; 
+    skos:prefLabel 
+       "Philosophy and psychology"@en ,
+       "Filosofiija, psykologiija"@se ,
+       "Filosofi, psykologi"@nn ,
+       "Filosofi, psykologi"@nb ,
+       "Filosofia ja psykologia"@fi ,
+       "Filosofi, psykologi"@sv .
+
+loovs:05  a skos:Concept, owl:Class ;
+    skos:notation "05" ; 
+    skos:prefLabel 
+       "Religious literature"@en ,
+       "VUOIŊŊALAŠ GIRJJÁLAŠVUOHTA"@se ,
+       "RELIGIØS LITTERATUR"@nn ,
+       "RELIGIØS LITTERATUR"@nb ,
+       "USKONNOLLINEN KIRJALLISUUS"@fi ,
+       "RELIGIÖS LITTERATUR"@sv .
+
+loovs:05a  a skos:Concept, owl:Class ;
+    skos:notation "05a" ; 
+    skos:prefLabel 
+       "The Bible and biblical history"@en ,
+       "Biibbal ja biibbalhistorjá"@se ,
+       "Bibelen/bibelhistorie"@nn ,
+       "Bibelen/bibelhistorie"@nb ,
+       "Raamattu ja raamatunhistoria"@fi ,
+       "Bibeln / bibelhistoria"@sv .
+
+loovs:05b  a skos:Concept, owl:Class ;
+    skos:notation "05b" ; 
+    skos:prefLabel 
+       "Psalms and hymns"@en ,
+       "Sálmmat ja lávlagat"@se ,
+       "Salmer og songar"@nn ,
+       "Salmer og sanger"@nb ,
+       "Virret ja hengelliset laulut"@fi ,
+       "Psalmer och sånger"@sv .
+
+loovs:05c  a skos:Concept, owl:Class ;
+    skos:notation "05c" ; 
+    skos:prefLabel 
+       "Other works"@en ,
+       "Eará čállagat"@se ,
+       "Andre skrifter"@nn ,
+       "Andre skrifter"@nb ,
+       "Muut teokset"@fi ,
+       "Andra skrifter"@sv .
+
+loovs:06  a skos:Concept, owl:Class ;
+    skos:notation "06" ; 
+    skos:prefLabel 
+       "Philology, Language"@en ,
+       "GIELLADIEĐA"@se ,
+       "SPRÅKVITSKAP"@nn ,
+       "SPRÅKVITENSKAP"@nb ,
+       "KIELITIEDE"@fi ,
+       "SPRÅKVETENSKAP"@sv .
+
+loovs:06a  a skos:Concept, owl:Class ;
+    skos:notation "06a" ; 
+    skos:prefLabel 
+       "Language in society"@en ,
+       "Giellagažaldat"@se ,
+       "Språkspørsmålet"@nn ,
+       "Språkspørsmålet"@nb ,
+       "Kieli yhteiskunnassa"@fi ,
+       "Språkfrågor"@sv .
+
+loovs:06a1  a skos:Concept, owl:Class ;
+    skos:notation "06a1" ; 
+    skos:prefLabel 
+       "Teaching and studying languages"@en ,
+       "Giellaoahpaheapmi, giellaoahpahallan"@se ,
+       "Språkopplæring, språkstudium"@nn ,
+       "Språkopplæring, språkstudium"@nb ,
+       "Kielten opetus ja opiskelu"@fi ,
+       "Språkundervisning, språkstudier"@sv .
+
+loovs:06b  a skos:Concept, owl:Class ;
+    skos:notation "06b" ; 
+    skos:prefLabel 
+       "Linguistics"@en ,
+       "Gielladutkan"@se ,
+       "Språkforsking"@nn ,
+       "Språkforskning"@nb ,
+       "Lingvistiikka"@fi ,
+       "Språkforskning"@sv .
+
+loovs:06b1  a skos:Concept, owl:Class ;
+    skos:notation "06b1" ; 
+    skos:prefLabel 
+       "Language history and etymology"@en ,
+       "Giellahistorjá ja etymologiija"@se ,
+       "Språkhistorie og etymologi"@nn ,
+       "Språkhistorie og etymologi"@nb ,
+       "Kielten historia ja etymologia"@fi ,
+       "Språkhistoria och etymologi"@sv .
+
+loovs:06b1a  a skos:Concept, owl:Class ;
+    skos:notation "06b1a" ; 
+    skos:prefLabel 
+       "Name research"@en ,
+       "Nammadutkan"@se ,
+       "Namneforsking"@nn ,
+       "Navneforskning"@nb ,
+       "Nimistöntutkimus"@fi ,
+       "Namnforskning"@sv .
+
+loovs:06b2  a skos:Concept, owl:Class ;
+    skos:notation "06b2" ; 
+    skos:prefLabel 
+       "Dialects"@en ,
+       "Suopmanat"@se ,
+       "Dialektar"@nn ,
+       "Dialekter"@nb ,
+       "Murteet"@fi ,
+       "Dialekter"@sv .
+
+loovs:06b3  a skos:Concept, owl:Class ;
+    skos:notation "06b3" ; 
+    skos:prefLabel 
+       "Other research"@en ,
+       "Eará dutkamušat"@se ,
+       "Anna forsking"@nn ,
+       "Annen forskning"@nb ,
+       "Muu tutkimus"@fi ,
+       "Annan forskning"@sv .
+
+loovs:06c  a skos:Concept, owl:Class ;
+    skos:notation "06c" ; 
+    skos:prefLabel 
+       "Grammar and language revitalisation"@en ,
+       "Giellaoahppa ja giellagáhtten"@se ,
+       "Grammatikk og språkrøkt"@nn ,
+       "Grammatikk og språkrøkt"@nb ,
+       "Kielioppi ja kelen elvytys"@fi ,
+       "Grammatik och språkvård"@sv .
+
+loovs:06d  a skos:Concept, owl:Class ;
+    skos:notation "06d" ; 
+    skos:prefLabel 
+       "Dictionaries"@en ,
+       "Sátnegirjjit"@se ,
+       "Ordbøker"@nn ,
+       "Ordbøker"@nb ,
+       "Sanakirjat"@fi ,
+       "Ordböcker"@sv .
+
+loovs:06e  a skos:Concept, owl:Class ;
+    skos:notation "06e" ; 
+    skos:prefLabel 
+       "Textbooks and readers"@en ,
+       "Oahppogirjjit ja lohkangirjjit"@se ,
+       "Lærebøker og lesebøker"@nn ,
+       "Lærebøker og lesebøker"@nb ,
+       "Oppikirjat ja lukemistot"@fi ,
+       "Läroböcker och läseböcker"@sv .
+
+loovs:07  a skos:Concept, owl:Class ;
+    skos:notation "07" ; 
+    skos:prefLabel 
+       "Medicine, physical anthropology"@en ,
+       "DÁLKKASTUSDIEĐA, FYSÁLAŠ ANTROPOLOGIIJA"@se ,
+       "MEDISIN, FYSISK ANTROPOLOGI"@nn ,
+       "MEDISIN, FYSISK ANTROPOLOGI"@nb ,
+       "LÄÄKETIEDE, FYYSINEN ANTROPOLOGIA"@fi ,
+       "MEDICIN, FYSISK ANTROPOLOGI"@sv .
+
+loovs:07a  a skos:Concept, owl:Class ;
+    skos:notation "07a" ; 
+    skos:prefLabel 
+       "Medical sciences"@en ,
+       "Dálkkastusdieđa"@se ,
+       "Medisin"@nn ,
+       "Medisin"@nb ,
+       "Lääketiede"@fi ,
+       "Medicin"@sv .
+
+loovs:07b  a skos:Concept, owl:Class ;
+    skos:notation "07b" ; 
+    skos:prefLabel 
+       "Physical anthropology"@en ,
+       "Fysálaš antropologiija"@se ,
+       "Fysisk antropologi"@nn ,
+       "Fysisk antropologi"@nb ,
+       "Fyysinen antropologia"@fi ,
+       "Fysisk antropologi"@sv .
+
+loovs:08  a skos:Concept, owl:Class ;
+    skos:notation "08" ; 
+    skos:prefLabel 
+       "Geography and local history"@en ,
+       "EANADIEĐA JA BÁIKKÁLAŠ HISTORJÁ"@se ,
+       "GEOGRAFI OG LOKALHISTORIE"@nn ,
+       "GEOGRAFI OG LOKALHISTORIE"@nb ,
+       "MAANTIEDE JA PAIKALLISHISTORIA"@fi ,
+       "GEOGRAFI OCH LOKALHISTORIA"@sv .
+
+loovs:08a  a skos:Concept, owl:Class ;
+    skos:notation "08a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:08b  a skos:Concept, owl:Class ;
+    skos:notation "08b" ; 
+    skos:prefLabel 
+       "Specific regions"@en ,
+       "Guovllut"@se ,
+       "Enkelte område"@nn ,
+       "Enkelte områder"@nb ,
+       "Yksittäiset alueet"@fi ,
+       "Särskilda områden"@sv .
+
+loovs:08c  a skos:Concept, owl:Class ;
+    skos:notation "08c" ; 
+    skos:prefLabel 
+       "Travelogues"@en ,
+       "Mátkemuitalusat"@se ,
+       "Reiseskildringar"@nn ,
+       "Reiseskildringer"@nb ,
+       "Matkakertomukset"@fi ,
+       "Reseskildringar"@sv .
+
+loovs:09  a skos:Concept, owl:Class ;
+    skos:notation "09" ; 
+    skos:prefLabel 
+       "History"@en ,
+       "HISTORJÁ"@se ,
+       "HISTORIE"@nn ,
+       "HISTORIE"@nb ,
+       "HISTORIA"@fi ,
+       "HISTORIA"@sv .
+
+loovs:09a  a skos:Concept, owl:Class ;
+    skos:notation "09a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:09b  a skos:Concept, owl:Class ;
+    skos:notation "09b" ; 
+    skos:prefLabel 
+       "Archaeology"@en ,
+       "Arkeologiija"@se ,
+       "Arkeologi"@nn ,
+       "Arkeologi"@nb ,
+       "Arkeologia"@fi ,
+       "Arkeologi"@sv .
+
+loovs:09c  a skos:Concept, owl:Class ;
+    skos:notation "09c" ; 
+    skos:prefLabel 
+       "History"@en ,
+       "Historjá"@se ,
+       "Historie"@nn ,
+       "Historie"@nb ,
+       "Historia"@fi ,
+       "Historia"@sv .
+
+loovs:10  a skos:Concept, owl:Class ;
+    skos:notation "10" ; 
+    skos:prefLabel 
+       "Personal history"@en ,
+       "OLBMUID HISTORJÁ"@se ,
+       "PERSONALHISTORIE"@nn ,
+       "PERSONALHISTORIE"@nb ,
+       "HENKILÖHISTORIA"@fi ,
+       "PERSONHISTORIA"@sv .
+
+loovs:10a  a skos:Concept, owl:Class ;
+    skos:notation "10a" ; 
+    skos:prefLabel 
+       "Collections of biographies"@en ,
+       "Biografiačoggosat"@se ,
+       "Samlingsbiografiar"@nn ,
+       "Samlingsbiografier"@nb ,
+       "Elämäkertakokoomateokset"@fi ,
+       "Samlingsbiografier"@sv .
+
+loovs:10b  a skos:Concept, owl:Class ;
+    skos:notation "10b" ; 
+    skos:prefLabel 
+       "Family history"@en ,
+       "Ovttaskas sogat"@se ,
+       "Enkelte slekter"@nn ,
+       "Enkelte slekter"@nb ,
+       "Sukuhistoriat"@fi ,
+       "Särskilda släkter"@sv .
+
+loovs:10c  a skos:Concept, owl:Class ;
+    skos:notation "10c" ; 
+    skos:prefLabel 
+       "Biographies"@en ,
+       "Ovttaskas olbmot"@se ,
+       "Enkelte personar"@nn ,
+       "Enkelte personer"@nb ,
+       "Elämäkerrat"@fi ,
+       "Särskilda personer"@sv .
+
+loovs:11  a skos:Concept, owl:Class ;
+    skos:notation "11" ; 
+    skos:prefLabel 
+       "Cultural history"@en ,
+       "KULTURHISTORJÁ"@se ,
+       "KULTURHISTORIE"@nn ,
+       "KULTURHISTORIE"@nb ,
+       "KULTTUURIHISTORIA"@fi ,
+       "KULTURHISTORIA"@sv .
+
+loovs:11a  a skos:Concept, owl:Class ;
+    skos:notation "11a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:11b  a skos:Concept, owl:Class ;
+    skos:notation "11b" ; 
+    skos:prefLabel 
+       "Work and industries"@en ,
+       "Bargu ja ealáhusat"@se ,
+       "Arbeids- og næringsliv"@nn ,
+       "Arbeids- og næringsliv"@nb ,
+       "Työ ja elinkeinot"@fi ,
+       "Arbets- och näringsliv"@sv .
+
+loovs:11b1  a skos:Concept, owl:Class ;
+    skos:notation "11b1" ; 
+    skos:prefLabel 
+       "Hunting and trapping"@en ,
+       "Meahccebivdu"@se ,
+       "Jakt og fangst"@nn ,
+       "Jakt og fangst"@nb ,
+       "Metsästys ja pyynti"@fi ,
+       "Jakt och fångst"@sv .
+
+loovs:11b2  a skos:Concept, owl:Class ;
+    skos:notation "11b2" ; 
+    skos:prefLabel 
+       "Fishing"@en ,
+       "Guollebivdu"@se ,
+       "Fiske"@nn ,
+       "Fiske"@nb ,
+       "Kalastus"@fi ,
+       "Fiske"@sv .
+
+loovs:11b3  a skos:Concept, owl:Class ;
+    skos:notation "11b3" ; 
+    skos:prefLabel 
+       "Reindeer nomadism"@en ,
+       "Boazodoallu"@se ,
+       "Reinnomadisme"@nn ,
+       "Reinnomadisme"@nb ,
+       "Poropaimentolaisuus"@fi ,
+       "Rennomadism"@sv .
+
+loovs:11b4  a skos:Concept, owl:Class ;
+    skos:notation "11b4" ; 
+    skos:prefLabel 
+       "Livestock and agriculture"@en ,
+       "Šibit- ja eanadoallu"@se ,
+       "Fedrift og jordbruk"@nn ,
+       "Fedrift og jordbruk"@nb ,
+       "Karjatalous ja maanviljely"@fi ,
+       "Jordbruk och kreatursskötsel"@sv .
+
+loovs:11b5  a skos:Concept, owl:Class ;
+    skos:notation "11b5" ; 
+    skos:prefLabel 
+       "Other industries"@en ,
+       "Eará ealáhusat"@se ,
+       "Andre næringar"@nn ,
+       "Andre næringer"@nb ,
+       "Muut elinkeinot"@fi ,
+       "Andra näringar"@sv .
+
+loovs:11b6  a skos:Concept, owl:Class ;
+    skos:notation "11b6" ; 
+    skos:prefLabel 
+       "Commerce and markets"@en ,
+       "Gávpi ja márkanat"@se ,
+       "Handel og marknader"@nn ,
+       "Handel og markeder"@nb ,
+       "Kauppa ja markkinat"@fi ,
+       "Handel och marknader"@sv .
+
+loovs:11b7  a skos:Concept, owl:Class ;
+    skos:notation "11b7" ; 
+    skos:prefLabel 
+       "Diet and cooking"@en ,
+       "Biebmodilli ja biebmodoallu"@se ,
+       "Kosthald/matstell"@nn ,
+       "Kosthold/matstell"@nb ,
+       "Ravinto ja ruoanvalmistus"@fi ,
+       "Kost och matlagning"@sv .
+
+loovs:11c  a skos:Concept, owl:Class ;
+    skos:notation "11c" ; 
+    skos:prefLabel 
+       "Material culture"@en ,
+       "Ávnnaskultuvra"@se ,
+       "Materiell kultur"@nn ,
+       "Materiell kultur"@nb ,
+       "Aineellinen kulttuuri"@fi ,
+       "Materiell kultur"@sv .
+
+loovs:11c1  a skos:Concept, owl:Class ;
+    skos:notation "11c1" ; 
+    skos:prefLabel 
+       "Housing and buildings"@en ,
+       "Ásodagat ja visttit"@se ,
+       "Bustader/bygningar"@nn ,
+       "Boliger/bygninger"@nb ,
+       "Asunnot ja rakennukset"@fi ,
+       "Bostäder / byggnader"@sv .
+
+loovs:11c2  a skos:Concept, owl:Class ;
+    skos:notation "11c2" ; 
+    skos:prefLabel 
+       "Transportation"@en ,
+       "Fievrrut"@se ,
+       "Transportmiddel"@nn ,
+       "Transportmidler"@nb ,
+       "Kuljetus"@fi ,
+       "Transportmedel"@sv .
+
+loovs:11c3  a skos:Concept, owl:Class ;
+    skos:notation "11c3" ; 
+    skos:prefLabel 
+       "Furniture, utensils, tools"@en ,
+       "Viessogálvvut, viessoneavvut, bargoneavvut"@se ,
+       "Møblar, husgeråd, reidskap osb."@nn ,
+       "Møbler, husgeråd, redskap etc."@nb ,
+       "Huonekalut, käyttöesineet, työkalut"@fi ,
+       "Möbler, husgeråd, redskap etc."@sv .
+
+loovs:11c4  a skos:Concept, owl:Class ;
+    skos:notation "11c4" ; 
+    skos:prefLabel 
+       "Handicraft"@en ,
+       "Duodji"@se ,
+       "Husflid og handverk"@nn ,
+       "Husflid og håndverk"@nb ,
+       "Käsityöt"@fi ,
+       "Hemslöjd och hantverk"@sv .
+
+loovs:11c5  a skos:Concept, owl:Class ;
+    skos:notation "11c5" ; 
+    skos:prefLabel 
+       "Clothing"@en ,
+       "Biktasat"@se ,
+       "Klede"@nn ,
+       "Klær"@nb ,
+       "Vaatetus"@fi ,
+       "Kläder"@sv .
+
+loovs:11d  a skos:Concept, owl:Class ;
+    skos:notation "11d" ; 
+    skos:prefLabel 
+       "Folk culture. Folklore"@en ,
+       "Vuoiŋŋalaš kultuvra ja álbmotmuitu"@se ,
+       "Åndeleg kultur/folkeminne"@nn ,
+       "Åndelig kultur/folkeminne"@nb ,
+       "Henkinen kulttuuri, kansanperinne"@fi ,
+       "Andlig kultur / folkminnen"@sv .
+
+loovs:11d1  a skos:Concept, owl:Class ;
+    skos:notation "11d1" ; 
+    skos:prefLabel 
+       "Folk literature"@en ,
+       "Álbmotdikten"@se ,
+       "Folkedikting"@nn ,
+       "Folkediktning"@nb ,
+       "Kansanrunous"@fi ,
+       "Folkdiktning"@sv .
+
+loovs:11d1a  a skos:Concept, owl:Class ;
+    skos:notation "11d1a" ; 
+    skos:prefLabel 
+       "Tales and lore"@en ,
+       "Máidnasat ja cukcasat"@se ,
+       "Eventyr og segner"@nn ,
+       "Eventyr og sagn"@nb ,
+       "Kertomukset ja perimätieto"@fi ,
+       "Sagor och sägner"@sv .
+
+loovs:11d1b  a skos:Concept, owl:Class ;
+    skos:notation "11d1b" ; 
+    skos:prefLabel 
+       "Rhymes and verse, proverbs and phrases, ballads"@en ,
+       "Hoahkamat ja sátnegárgadasat, sátnevádjasat ja dajaldagat, lávlagaččat"@se ,
+       "Rim, regler, ordtak, talemåtar, viser osb."@nn ,
+       "Rim, regler, ordtak, talemåter, viser etc."@nb ,
+       "Riimit ja säkeet, sananlaskut, sanonnat ja balladit"@fi ,
+       "Rim, ramsor, ordspråk, talesätt, visor etc."@sv .
+
+loovs:11d2  a skos:Concept, owl:Class ;
+    skos:notation "11d2" ; 
+    skos:prefLabel 
+       "Manners"@en ,
+       "Olmmošvierut"@se ,
+       "Skikk og bruk"@nn ,
+       "Skikk og bruk"@nb ,
+       "Tavat"@fi ,
+       "Seder och bruk"@sv .
+
+loovs:11d3  a skos:Concept, owl:Class ;
+    skos:notation "11d3" ; 
+    skos:prefLabel 
+       "Folklore, folk belief"@en ,
+       "Álbmotgáttut"@se ,
+       "Folketru"@nn ,
+       "Folketro"@nb ,
+       "Kansanperinne, uskomukset"@fi ,
+       "Folktro"@sv .
+
+loovs:11d4  a skos:Concept, owl:Class ;
+    skos:notation "11d4" ; 
+    skos:prefLabel 
+       "Folk medicine"@en ,
+       "Álbmotdálkasat"@se ,
+       "Folkemedisin"@nn ,
+       "Folkemedisin"@nb ,
+       "Kansanlääkintä"@fi ,
+       "Folkmedicin"@sv .
+
+loovs:11e  a skos:Concept, owl:Class ;
+    skos:notation "11e" ; 
+    skos:prefLabel 
+       "Social organisation"@en ,
+       "Sosiála oktavuođat"@se ,
+       "Sosial organisasjon"@nn ,
+       "Sosial organisasjon"@nb ,
+       "Sosiaaliset suhteet"@fi ,
+       "Social organisation"@sv .
+
+loovs:11e1  a skos:Concept, owl:Class ;
+    skos:notation "11e1" ; 
+    skos:prefLabel 
+       "Family and kinship"@en ,
+       "Bearaš ja fuolkevuohta"@se ,
+       "Familie og slektskap"@nn ,
+       "Familie og slektskap"@nb ,
+       "Perhe ja sukulaisuus"@fi ,
+       "Familje- och släktskap"@sv .
+
+loovs:11e2  a skos:Concept, owl:Class ;
+    skos:notation "11e2" ; 
+    skos:prefLabel 
+       "Justice and moral"@en ,
+       "Riekte- ja moráladilálašvuohta"@se ,
+       "Retts- og moralforhold"@nn ,
+       "Retts- og moralforhold"@nb ,
+       "Oikeus ja moraaliset olot"@fi ,
+       "Rätts- och moralförhållanden"@sv .
+
+loovs:11f  a skos:Concept, owl:Class ;
+    skos:notation "11f" ; 
+    skos:prefLabel 
+       "Museums and exhibitions"@en ,
+       "Dávvirvuorkkát ja čájáhusat"@se ,
+       "Museum og utstillingar"@nn ,
+       "Museer og utstillinger"@nb ,
+       "Museot ja näyttelyt"@fi ,
+       "Museer och utställningar"@sv .
+
+loovs:11f1  a skos:Concept, owl:Class ;
+    skos:notation "11f1" ; 
+    skos:prefLabel 
+       "Preservation"@en ,
+       "Kulturmuitogáhtten"@se ,
+       "Kulturminnevern"@nn ,
+       "Kulturminnevern"@nb ,
+       "Kulttuurihistorialliset suojelukohteet"@fi ,
+       "Kulturminnesvård"@sv .
+
+loovs:12  a skos:Concept, owl:Class ;
+    skos:notation "12" ; 
+    skos:prefLabel 
+       "Industry and economy"@en ,
+       "EALÁHUSAT JA EKONOMIIJA"@se ,
+       "NÆRINGSLIV OG ØKONOMI"@nn ,
+       "NÆRINGSLIV OG ØKONOMI"@nb ,
+       "ELINKEINOT JA TALOUS"@fi ,
+       "NÄRINGSLIV OCH EKONOMI"@sv .
+
+loovs:12a  a skos:Concept, owl:Class ;
+    skos:notation "12a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:12b  a skos:Concept, owl:Class ;
+    skos:notation "12b" ; 
+    skos:prefLabel 
+       "Reindeer husbandry"@en ,
+       "Boazodoallu"@se ,
+       "Reindrift"@nn ,
+       "Reindrift"@nb ,
+       "Poronhoito"@fi ,
+       "Renskötsel / rennäring"@sv .
+
+loovs:12c  a skos:Concept, owl:Class ;
+    skos:notation "12c" ; 
+    skos:prefLabel 
+       "Agriculture and livestock"@en ,
+       "Eana- ja šibitdoallu"@se ,
+       "Jordbruk og fedrift"@nn ,
+       "Jordbruk og fedrift"@nb ,
+       "Maanviljely ja karjatalous"@fi ,
+       "Jordbruk och kreatursskötsel"@sv .
+
+loovs:12d  a skos:Concept, owl:Class ;
+    skos:notation "12d" ; 
+    skos:prefLabel 
+       "Hunting"@en ,
+       "Meahccebivdu"@se ,
+       "Jakt"@nn ,
+       "Jakt"@nb ,
+       "Metsästys"@fi ,
+       "Jakt"@sv .
+
+loovs:12e  a skos:Concept, owl:Class ;
+    skos:notation "12e" ; 
+    skos:prefLabel 
+       "Fishing"@en ,
+       "Guollebivdu"@se ,
+       "Fiske"@nn ,
+       "Fiske"@nb ,
+       "Kalastus"@fi ,
+       "Fiske"@sv .
+
+loovs:12f  a skos:Concept, owl:Class ;
+    skos:notation "12f" ; 
+    skos:prefLabel 
+       "Handicraft"@en ,
+       "Duodji"@se ,
+       "Husflid og handverk"@nn ,
+       "Husflid og håndverk"@nb ,
+       "Käsityöt"@fi ,
+       "Hemslöjd och hantverk"@sv .
+
+loovs:12g  a skos:Concept, owl:Class ;
+    skos:notation "12g" ; 
+    skos:prefLabel 
+       "Other trades"@en ,
+       "Eará ealáhusat"@se ,
+       "Andre næringar"@nn ,
+       "Andre næringer"@nb ,
+       "Muut elinkeinot"@fi ,
+       "Andra näringar"@sv .
+
+loovs:12h  a skos:Concept, owl:Class ;
+    skos:notation "12h" ; 
+    skos:prefLabel 
+       "Business administration"@en ,
+       "Fitnodatekonomiija"@se ,
+       "Bedriftsøkonomi"@nn ,
+       "Bedriftsøkonomi"@nb ,
+       "Liiketalous"@fi ,
+       "Företagsekonomi"@sv .
+
+loovs:12i  a skos:Concept, owl:Class ;
+    skos:notation "12i" ; 
+    skos:prefLabel 
+       "Home economics"@en ,
+       "Dállodoallu ja dan ekonomiija"@se ,
+       "Husleg økonomi/husstell"@nn ,
+       "Huslig økonomi/husstell"@nb ,
+       "Kotitalous"@fi ,
+       "Privatekonomi / hushåll"@sv .
+
+loovs:13  a skos:Concept, owl:Class ;
+    skos:notation "13" ; 
+    skos:prefLabel 
+       "Minorities, Conditions and rights"@en ,
+       "UNNITLOHKOÁLBMOGAT. DILLI JA VUOIGATVUOĐAT"@se ,
+       "MINORITETS- OG RETTSTILHØVE"@nn ,
+       "MINORITETS OG RETTSFORHOLD"@nb ,
+       "VÄHEMMISTÖT JA OIKEUDET"@fi ,
+       "MINORITETS- OCH RÄTTSFÖRHÅLLANDEN"@sv .
+
+loovs:13a  a skos:Concept, owl:Class ;
+    skos:notation "13a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:13b  a skos:Concept, owl:Class ;
+    skos:notation "13b" ; 
+    skos:prefLabel 
+       "Exploitation within the Sami regions"@en ,
+       "Ávkkástallan sámi guovlluin"@se ,
+       "Eksploatering innanfor det samiske området"@nn ,
+       "Eksploatering innenfor det samiske området"@nb ,
+       "Hyväksikäyttö saamelaisalueella"@fi ,
+       "Exploatering inom det samiska området"@sv .
+
+loovs:13b1  a skos:Concept, owl:Class ;
+    skos:notation "13b1" ; 
+    skos:prefLabel 
+       "Forestry"@en ,
+       "Vuovdedoallu"@se ,
+       "Skogbruk"@nn ,
+       "Skogbruk"@nb ,
+       "Metsätalous"@fi ,
+       "Skogsbruk"@sv .
+
+loovs:13b2  a skos:Concept, owl:Class ;
+    skos:notation "13b2" ; 
+    skos:prefLabel 
+       "Mining"@en ,
+       "Ruvkedoaibma"@se ,
+       "Gruvedrift"@nn ,
+       "Gruvedrift"@nb ,
+       "Kaivostoiminta"@fi ,
+       "Gruvdrift"@sv .
+
+loovs:13b3  a skos:Concept, owl:Class ;
+    skos:notation "13b3" ; 
+    skos:prefLabel 
+       "Watercourse regulations, development of water power"@en ,
+       "Čázádatásahallan / fápmorusttegiid huksen"@se ,
+       "Vassdragsregulering / kraftutbygging"@nn ,
+       "Vassdragsregulering / kraftutbygging"@nb ,
+       "Vesistöjen säännöstely, vesivoiman kehitys"@fi ,
+       "Vattenkraftsutbyggnad / vattenreglering"@sv .
+
+loovs:13b4  a skos:Concept, owl:Class ;
+    skos:notation "13b4" ; 
+    skos:prefLabel 
+       "Tourism / outdoor life"@en ,
+       "Turisma ja olgoáibmodoaibma"@se ,
+       "Turisme / friluftsliv"@nn ,
+       "Turisme / friluftsliv"@nb ,
+       "Matkailu / retkeily"@fi ,
+       "Turism / friluftsliv"@sv .
+
+loovs:13b5  a skos:Concept, owl:Class ;
+    skos:notation "13b5" ; 
+    skos:prefLabel 
+       "Other exploitation"@en ,
+       "Eará ávkkástallan"@se ,
+       "Andre inngrep"@nn ,
+       "Andre inngrep"@nb ,
+       "Muu hyväksikäyttö"@fi ,
+       "Andra ingrepp"@sv .
+
+loovs:13c  a skos:Concept, owl:Class ;
+    skos:notation "13c" ; 
+    skos:prefLabel 
+       "Minority conditions, minority policy"@en ,
+       "Unnitlohkoálbmogat / dilli ja politihkka"@se ,
+       "Minoritetstilhøve/minoritetspolitikk"@nn ,
+       "Minoritetsforhold/ minoritetspolitikk"@nb ,
+       "Vähemmistökansat, olosuhteet ja politiikka"@fi ,
+       "Minoritetsförhållanden / minoritetspolitik"@sv .
+
+loovs:13c1  a skos:Concept, owl:Class ;
+    skos:notation "13c1" ; 
+    skos:prefLabel 
+       "Relations to the Government"@en ,
+       "Gaskavuođat eiseváldiiguin"@se ,
+       "Forholdet til styresmakter"@nn ,
+       "Forholdet til myndighetene"@nb ,
+       "Suhteet viranomaisiin"@fi ,
+       "Förhållandet till myndigheter"@sv .
+
+loovs:13c2  a skos:Concept, owl:Class ;
+    skos:notation "13c2" ; 
+    skos:prefLabel 
+       "Relations to other ethnic groups"@en ,
+       "Gaskavuođat eará olmmoščearddaidde"@se ,
+       "Forholdet til andre folkegrupper"@nn ,
+       "Forholdet til andre folkegrupper"@nb ,
+       "Suhteet muihin etnisiin ryhmiin"@fi ,
+       "Förhållandet till andra folkgrupper"@sv .
+
+loovs:13d  a skos:Concept, owl:Class ;
+    skos:notation "13d" ; 
+    skos:prefLabel 
+       "Legal history and legal position"@en ,
+       "Vuoigatvuođat / vuoigatvuođahistorjá"@se ,
+       "Rettstilhøve/rettshistorie"@nn ,
+       "Rettsforhold/rettshistorie"@nb ,
+       "Oikeushistoria ja oikeudellinen asema"@fi ,
+       "Rättsförhållanden / rättshistoria"@sv .
+
+loovs:14  a skos:Concept, owl:Class ;
+    skos:notation "14" ; 
+    skos:prefLabel 
+       "Social conditions"@en ,
+       "SERVVODATDILLI"@se ,
+       "SAMFUNNSTILHØVE"@nn ,
+       "SAMFUNNSFORHOLD"@nb ,
+       "YHTEISKUNNALLISET OLOT"@fi ,
+       "SAMHÄLLSFÖRHÅLLANDEN"@sv .
+
+loovs:14a  a skos:Concept, owl:Class ;
+    skos:notation "14a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:14b  a skos:Concept, owl:Class ;
+    skos:notation "14b" ; 
+    skos:prefLabel 
+       "Social conditions, Social policy"@en ,
+       "Sosiálalaš dilit / sosiála politihkka"@se ,
+       "Sosiale tilhøve/sosialpolitikk"@nn ,
+       "Sosiale forhold/sosialpolitikk"@nb ,
+       "Sosiaaliset olot, sosiaalipolitiikka"@fi ,
+       "Sociala förhållanden / socialpolitik"@sv .
+
+loovs:14c  a skos:Concept, owl:Class ;
+    skos:notation "14c" ; 
+    skos:prefLabel 
+       "Administration and politics"@en ,
+       "Hálddáhus ja politihkka"@se ,
+       "Forvaltning og politikk"@nn ,
+       "Forvaltning og politikk"@nb ,
+       "Hallinto ja politiikka"@fi ,
+       "Förvaltning och politik"@sv .
+
+loovs:14d  a skos:Concept, owl:Class ;
+    skos:notation "14d" ; 
+    skos:prefLabel 
+       "Communications"@en ,
+       "Johtolagat"@se ,
+       "Kommunikasjonar"@nn ,
+       "Kommunikasjoner"@nb ,
+       "Viestintä"@fi ,
+       "Kommunikationer"@sv .
+
+loovs:14e  a skos:Concept, owl:Class ;
+    skos:notation "14e" ; 
+    skos:prefLabel 
+       "Demography and statistics"@en ,
+       "Ássiidválddahallan ja statistihkka"@se ,
+       "Demografi og statistikk"@nn ,
+       "Demografi og statistikk"@nb ,
+       "Väestötiede ja tilastot"@fi ,
+       "Demografi och statistik"@sv .
+
+loovs:14f  a skos:Concept, owl:Class ;
+    skos:notation "14f" ; 
+    skos:prefLabel 
+       "Women’s liberation. Women’s history"@en ,
+       "Nissonáššit / nissonhistorjá"@se ,
+       "Kvinnesak/kvinnehistorie"@nn ,
+       "Kvinnesak/kvinnehistorie"@nb ,
+       "Naistutkimus / naisen historia"@fi ,
+       "Kvinnofrågor / kvinnohistoria"@sv .
+
+loovs:15  a skos:Concept, owl:Class ;
+    skos:notation "15" ; 
+    skos:prefLabel 
+       "SCHOOLS AND EDUCATION"@en ,
+       "SKUVLA JA OAHPPU"@se ,
+       "SKOLE OG UTDANNING"@nn ,
+       "SKOLE OG UTDANNING"@nb ,
+       "KOULUT JA KOULUTUS"@fi ,
+       "SKOLA OCH UTBILDNING"@sv .
+
+loovs:15a  a skos:Concept, owl:Class ;
+    skos:notation "15a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:15b  a skos:Concept, owl:Class ;
+    skos:notation "15b" ; 
+    skos:prefLabel 
+       "School history"@en ,
+       "Skuvlahistorjá"@se ,
+       "Skolehistorie"@nn ,
+       "Skolehistorie"@nb ,
+       "Kouluhistoria"@fi ,
+       "Skolhistoria"@sv .
+
+loovs:15c  a skos:Concept, owl:Class ;
+    skos:notation "15c" ; 
+    skos:prefLabel 
+       "Kindergarten"@en ,
+       "Ovdaskuvla"@se ,
+       "Førskole"@nn ,
+       "Førskole"@nb ,
+       "Esikoulu"@fi ,
+       "Förskola"@sv .
+
+loovs:15d  a skos:Concept, owl:Class ;
+    skos:notation "15d" ; 
+    skos:prefLabel 
+       "Primary school"@en ,
+       "Vuođđoskuvla"@se ,
+       "Grunnskole"@nn ,
+       "Grunnskole"@nb ,
+       "Peruskoulu"@fi ,
+       "Grundskola"@sv .
+
+loovs:15e  a skos:Concept, owl:Class ;
+    skos:notation "15e" ; 
+    skos:prefLabel 
+       "Secondary school"@en ,
+       "Joatkaskuvla"@se ,
+       "Vidaregåande skole"@nn ,
+       "Videregående skole"@nb ,
+       "Keskikoulu. Lukio"@fi ,
+       "Gymnasieskola"@sv .
+
+loovs:15f  a skos:Concept, owl:Class ;
+    skos:notation "15f" ; 
+    skos:prefLabel 
+       "Other education"@en ,
+       "Eará oahppu"@se ,
+       "Anna utdanning"@nn ,
+       "Annen utdanning"@nb ,
+       "Muu koulutus"@fi ,
+       "Annan utbildning"@sv .
+
+loovs:15g  a skos:Concept, owl:Class ;
+    skos:notation "15g" ; 
+    skos:prefLabel 
+       "Universities and academies"@en ,
+       "Universiteahta ja allaskuvla"@se ,
+       "Universitet og høgskole"@nn ,
+       "Universitet og høyskole"@nb ,
+       "Yliopistot ja korkeakoulut"@fi ,
+       "Universitet och högskola"@sv .
+
+loovs:15h  a skos:Concept, owl:Class ;
+    skos:notation "15h" ; 
+    skos:prefLabel 
+       "Adult education"@en ,
+       "Rávesolbmuidoahpahus"@se ,
+       "Vaksenopplæring"@nn ,
+       "Voksenopplæring"@nb ,
+       "Aikuiskoulutus"@fi ,
+       "Vuxenutbildning"@sv .
+
+loovs:15i  a skos:Concept, owl:Class ;
+    skos:notation "15i" ; 
+    skos:prefLabel 
+       "Specific subjects"@en ,
+       "Ovttaskas oahpposuorggit"@se ,
+       "Enkelte fag"@nn ,
+       "Enkelte fag"@nb ,
+       "Oppiaineet"@fi ,
+       "Särskilda ämnen"@sv .
+
+loovs:15j  a skos:Concept, owl:Class ;
+    skos:notation "15j" ; 
+    skos:prefLabel 
+       "Pedagogics and upbringing"@en ,
+       "Pedagogihkka ja bajásgeassin"@se ,
+       "Pedagogikk/oppdraging"@nn ,
+       "Pedagogikk/oppdragelse"@nb ,
+       "Pedagogiikka ja kasvatus"@fi ,
+       "Pedagogik / uppfostran"@sv .
+
+loovs:15k  a skos:Concept, owl:Class ;
+    skos:notation "15k" ; 
+    skos:prefLabel 
+       "Textbooks"@en ,
+       "Oahppogirjjit"@se ,
+       "Skolebøker"@nn ,
+       "Skolebøker"@nb ,
+       "Oppikirjat"@fi ,
+       "Skolböcker"@sv .
+
+loovs:16  a skos:Concept, owl:Class ;
+    skos:notation "16" ; 
+    skos:prefLabel 
+       "Art, music, theatre and film"@en ,
+       "DÁIDDA, MUSIHKKA, TEAHTER, FILBMA"@se ,
+       "KUNST, MUSIKK, TEATER OG FILM"@nn ,
+       "KUNST, MUSIKK, TEATER OG FILM"@nb ,
+       "TAIDE, MUSIIKKI, TEATTERI, ELOKUVAT"@fi ,
+       "KONST, MUSIK, TEATER OCH FILM"@sv .
+
+loovs:16a  a skos:Concept, owl:Class ;
+    skos:notation "16a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:16b  a skos:Concept, owl:Class ;
+    skos:notation "16b" ; 
+    skos:prefLabel 
+       "Creative arts"@en ,
+       "Hábmendáidda"@se ,
+       "Formkunst"@nn ,
+       "Formkunst"@nb ,
+       "Muotoilutaide"@fi ,
+       "Formkonst"@sv .
+
+loovs:16b1  a skos:Concept, owl:Class ;
+    skos:notation "16b1" ; 
+    skos:prefLabel 
+       "Visual art"@en ,
+       "Govvadáidda"@se ,
+       "Biletkunst"@nn ,
+       "Billedkunst"@nb ,
+       "Kuvataiteet"@fi ,
+       "Bildkonst"@sv .
+
+loovs:16b2  a skos:Concept, owl:Class ;
+    skos:notation "16b2" ; 
+    skos:prefLabel 
+       "Decorative arts"@en ,
+       "Dáiddaduodji"@se ,
+       "Kunsthandverk"@nn ,
+       "Kunsthåndverk"@nb ,
+       "Taidekäsityöt"@fi ,
+       "Konsthantverk"@sv .
+
+loovs:16b3  a skos:Concept, owl:Class ;
+    skos:notation "16b3" ; 
+    skos:prefLabel 
+       "Architecture"@en ,
+       "Arkitektuvra"@se ,
+       "Arkitektur"@nn ,
+       "Arkitektur"@nb ,
+       "Arkkitehtuuri"@fi ,
+       "Arkitektur"@sv .
+
+loovs:16c  a skos:Concept, owl:Class ;
+    skos:notation "16c" ; 
+    skos:prefLabel 
+       "Joik and music"@en ,
+       "Juoigan/musihkka"@se ,
+       "Joik/musikk"@nn ,
+       "Joik/musikk"@nb ,
+       "Joiut ja musiikki"@fi ,
+       "Jojk/musik"@sv .
+
+loovs:16d  a skos:Concept, owl:Class ;
+    skos:notation "16d" ; 
+    skos:prefLabel 
+       "Theatre"@en ,
+       "Teahter"@se ,
+       "Teater"@nn ,
+       "Teater"@nb ,
+       "Teatteri"@fi ,
+       "Teater"@sv .
+
+loovs:16e  a skos:Concept, owl:Class ;
+    skos:notation "16e" ; 
+    skos:prefLabel 
+       "Film and photo"@en ,
+       "Filbma ja govat"@se ,
+       "Film/foto"@nn ,
+       "Film/foto"@nb ,
+       "Elokuvat ja valokuvat"@fi ,
+       "Film/foto"@sv .
+
+loovs:17  a skos:Concept, owl:Class ;
+    skos:notation "17" ; 
+    skos:prefLabel 
+       "Literary history"@en ,
+       "GIRJJÁLAŠVUOĐAHISTORJÁ"@se ,
+       "LITTERATURHISTORIE"@nn ,
+       "LITTERATURHISTORIE"@nb ,
+       "KIRJALLISUUSHISTORIA"@fi ,
+       "LITTERATURHISTORIA"@sv .
+
+loovs:18  a skos:Concept, owl:Class ;
+    skos:notation "18" ; 
+    skos:prefLabel 
+       "Fiction"@en ,
+       "ČÁPPAGIRJJÁLAŠVUOHTA"@se ,
+       "SKJØNNLITTERATUR"@nn ,
+       "SKJØNNLITTERATUR"@nb ,
+       "KAUNOKIRJALLISUUS"@fi ,
+       "SKÖNLITTERATUR"@sv .
+
+loovs:18a  a skos:Concept, owl:Class ;
+    skos:notation "18a" ; 
+    skos:prefLabel 
+       "Sami authors"@en ,
+       "Sámi čállit"@se ,
+       "Samiske forfattarar"@nn ,
+       "Samiske forfattere"@nb ,
+       "Saamelaiskirjailijat"@fi ,
+       "Samiska författare"@sv .
+
+loovs:18a1  a skos:Concept, owl:Class ;
+    skos:notation "18a1" ; 
+    skos:prefLabel 
+       "In Sami languages"@en ,
+       "Sámegillii"@se ,
+       "På samisk"@nn ,
+       "På samisk"@nb ,
+       "Saamenkieliset"@fi ,
+       "På samiska"@sv .
+
+loovs:18a2  a skos:Concept, owl:Class ;
+    skos:notation "18a2" ; 
+    skos:prefLabel 
+       "In other languages"@en ,
+       "Eará gielaide"@se ,
+       "På andre språk"@nn ,
+       "På andre språk"@nb ,
+       "Muunkieliset"@fi ,
+       "På andra språk"@sv .
+
+loovs:18b  a skos:Concept, owl:Class ;
+    skos:notation "18b" ; 
+    skos:prefLabel 
+       "Non-Sami authors"@en ,
+       "Eai-sámi čállit"@se ,
+       "Ikkje-samiske forfattarar"@nn ,
+       "Ikke-samiske forfattere"@nb ,
+       "Ei-saamelaiset kirjailijat"@fi ,
+       "Icke-samiska författare"@sv .
+
+loovs:18b1  a skos:Concept, owl:Class ;
+    skos:notation "18b1" ; 
+    skos:prefLabel 
+       "In Sami languages"@en ,
+       "Sámegillii"@se ,
+       "På samisk"@nn ,
+       "På samisk"@nb ,
+       "Saamenkieliset"@fi ,
+       "På samiska"@sv .
+
+loovs:18b2  a skos:Concept, owl:Class ;
+    skos:notation "18b2" ; 
+    skos:prefLabel 
+       "With Sami main motif"@en ,
+       "Sámi váldofáttain"@se ,
+       "Med samisk hovudmotiv"@nn ,
+       "Med samisk hovedmotiv"@nb ,
+       "Saamelaisaiheiset"@fi ,
+       "Med samiskt huvudmotiv"@sv .
+
+loovs:18c  a skos:Concept, owl:Class ;
+    skos:notation "18c" ; 
+    skos:prefLabel 
+       "Children’s and youth literature"@en ,
+       "Mánáid- ja nuoraidgirjjit"@se ,
+       "Barne- og ungdomslitteratur"@nn ,
+       "Barne- og ungdomslitteratur"@nb ,
+       "Lasten ja nuorten kirjallisuus"@fi ,
+       "Barn- och ungdomslitteratur"@sv .
+
+loovs:18c1  a skos:Concept, owl:Class ;
+    skos:notation "18c1" ; 
+    skos:prefLabel 
+       "In Sami languages"@en ,
+       "Sámegillii"@se ,
+       "På samisk"@nn ,
+       "På samisk"@nb ,
+       "Saamenkieliset"@fi ,
+       "På samiska"@sv .
+
+loovs:18c2  a skos:Concept, owl:Class ;
+    skos:notation "18c2" ; 
+    skos:prefLabel 
+       "With Sami main motif"@en ,
+       "Sámi váldofáttain"@se ,
+       "Med samisk hovudmotiv"@nn ,
+       "Med samisk hovedmotiv"@nb ,
+       "Saamelaisaiheiset"@fi ,
+       "Med samiskt huvudmotiv"@sv .
+
+loovs:19  a skos:Concept, owl:Class ;
+    skos:notation "19" ; 
+    skos:prefLabel 
+       "Journalism and information operations"@en ,
+       "JOURNALISTIHKKA JA DIEĐÁHUSDOAIMMAT"@se ,
+       "JOURNALISTIKK / INFORMASJONSVERKSEMD"@nn ,
+       "JOURNALISTIKK / INFORMASJONSVIRKSOMHET"@nb ,
+       "JOURNALISMI JA TIEDOTUS"@fi ,
+       "JOURNALISTIK OCH INFORMATIONSVERKSAMHET"@sv .
+
+loovs:19a  a skos:Concept, owl:Class ;
+    skos:notation "19a" ; 
+    skos:prefLabel 
+       "General surveys"@en ,
+       "Oppalaš čilgehusat"@se ,
+       "Generelle oversyn"@nn ,
+       "Generelle oversikter"@nb ,
+       "Yleiskatsaukset"@fi ,
+       "Allmänna översiktsverk"@sv .
+
+loovs:19b  a skos:Concept, owl:Class ;
+    skos:notation "19b" ; 
+    skos:prefLabel 
+       "Press"@en ,
+       "Preantamediat"@se ,
+       "Presse"@nn ,
+       "Presse"@nb ,
+       "Lehdistö"@fi ,
+       "Tidningar och tidskrifter"@sv .
+
+loovs:19c  a skos:Concept, owl:Class ;
+    skos:notation "19c" ; 
+    skos:prefLabel 
+       "Radio and TV"@en ,
+       "Radio ja TV"@se ,
+       "Radio og fjernsyn"@nn ,
+       "Radio og fjernsyn"@nb ,
+       "Radio ja TV"@fi ,
+       "Radio och television"@sv .
+
+loovs:19d  a skos:Concept, owl:Class ;
+    skos:notation "19d" ; 
+    skos:prefLabel 
+       "Other information operations"@en ,
+       "Eará dieđáhusdoaimmat"@se ,
+       "Anna informasjonsverksemd"@nn ,
+       "Annen informasjonsvirksomhet"@nb ,
+       "Muu viestintätoiminta"@fi ,
+       "Annan informationsverksamhet"@sv .
+
+loovs:20  a skos:Concept, owl:Class ;
+    skos:notation "20" ; 
+    skos:prefLabel 
+       "Sports, games, play and entertainment"@en ,
+       "VALAŠTALLAN, DUHKORADDAMAT, SPEALUT, ÁIGEGOLUT"@se ,
+       "IDRETT, SPEL, LEIK OG UNDERHALDNING"@nn ,
+       "IDRETT, SPILL, LEK OG UNDERHOLDNING"@nb ,
+       "URHEILU, PELIT, LEIKIT JA VIIHDE"@fi ,
+       "IDROTT, SPEL, LEK OCH UNDERHÅLLNING"@sv .
+
+loovs:21  a skos:Concept, owl:Class ;
+    skos:notation "21" ; 
+    skos:prefLabel 
+       "Natural sciences, Technical science"@en ,
+       "LUONDDUDIEĐA. TEKNIHKKA"@se ,
+       "NATURVITSKAP / TEKNIKK"@nn ,
+       "NATURVITENSKAP / TEKNIKK"@nb ,
+       "LUONNONTIETEET. TEKNIIKKA"@fi ,
+       "NATURVETENSKAP OCH TEKNIK"@sv .
+
+loovs:21a  a skos:Concept, owl:Class ;
+    skos:notation "21a" ; 
+    skos:prefLabel 
+       "Natural sciences"@en ,
+       "Luonddudieđa"@se ,
+       "Naturvitskap"@nn ,
+       "Naturvitenskap"@nb ,
+       "Luonnontieteet"@fi ,
+       "Naturvetenskap"@sv .
+
+loovs:21b  a skos:Concept, owl:Class ;
+    skos:notation "21b" ; 
+    skos:prefLabel 
+       "Technical science"@en ,
+       "Teknihkka"@se ,
+       "Teknikk"@nn ,
+       "Teknikk"@nb ,
+       "Tekniset tieteet"@fi ,
+       "Teknik"@sv .
+
+loovs:21c  a skos:Concept, owl:Class ;
+    skos:notation "21c" ; 
+    skos:prefLabel 
+       "Mathematics"@en ,
+       "Matematihkka"@se ,
+       "Matematikk"@nn ,
+       "Matematikk"@nb ,
+       "Matematiikka"@fi ,
+       "Matematik"@sv .
