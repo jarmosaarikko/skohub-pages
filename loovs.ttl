@@ -25,7 +25,9 @@ loovs: a skos:ConceptScheme ;
         <https://iso639-3.sil.org/code/eng> ,
         <https://iso639-3.sil.org/code/swe> ,
         <https://iso639-3.sil.org/code/fin> ;
+
     dc:publisher "Ájtte, Swedish Mountain and Sami museum"@en  ;
+
     dc:creator "National library of Norway"@en ,
         "Sami Special Library at the Rovaniemi City Library"@en ,
         "Murmansk State Regional Universal Scientific Library"@en ,
